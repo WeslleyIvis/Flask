@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method="post" action=" /flask">
+    <table>
+        <p>Use this form to submit a search request:</p>
+        <tr>
+            <td>Phrase:</td>
+            <td><input type="text" title="phrase" name="phrase" width="60"></td>
+        </tr>
+        <tr>
+            <td>Letter:</td>
+            <td><input type="text" title="letters" name="letters" value="aeiou"></td>
+        </tr>
+    </table>
+    <p>When you're ready, click this button:</p>
+    <p><input value="Do It!" type="submit"></p>
+</form>
+
+<script>
+    console.log('teste')
+</script>
+
+{% endblock %}
